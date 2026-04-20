@@ -1,0 +1,61 @@
+name: flutter_starterkit
+description: "Flutter cross-platform starter kit for iOS/Android."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Routing
+  go_router: ^14.6.3
+
+  # Backend / Auth
+  supabase_flutter: ^2.8.4
+
+  # Payments
+  purchases_flutter: ^10.0.1
+
+  # Animations
+  lottie: ^3.3.1
+  rive: ^0.13.18
+  flutter_animate: ^4.5.2
+
+  # Media
+  video_player: ^2.9.3
+  chewie: ^1.11.0
+  just_audio: ^0.10.4
+  audio_service: ^0.18.16
+
+  # Utilities
+  flutter_dotenv: ^5.2.1
+  gap: ^3.0.1
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.14
+  riverpod_generator: ^2.6.3
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/animations/
+    - assets/lottie/
