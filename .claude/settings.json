@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "SLACK_URL=$(grep '^SLACK_WEBHOOK_URL=' .env 2>/dev/null | cut -d'=' -f2-); [ -n \"$SLACK_URL\" ] && curl -s -X POST -H 'Content-type: application/json' --data '{\"text\":\"✅ Claude Code 작업 완료\"}' \"$SLACK_URL\""
+          }
+        ]
+      }
+    ]
+  }
+}
